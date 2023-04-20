@@ -4,11 +4,11 @@
 - Farklı türler ile çalışmamıza olanak tanır
 
 ## Type kısaltmaları
-T : Type
-E : element
-K : key
-N : Number
-V : value
+T : Type<br>
+E : element<br>
+K : key<br>
+N : Number<br>
+V : value<br>
 
 
 - T veya E primitive tipleri hepsi olabilir
