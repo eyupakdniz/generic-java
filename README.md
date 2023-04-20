@@ -1,9 +1,9 @@
 # generic-java
-Generic
--Türden bağımsız çalışmamızı sağlar
--Farklı türler ile çalışmamıza olanak tanır
+# Generic
+- Türden bağımsız çalışmamızı sağlar
+- Farklı türler ile çalışmamıza olanak tanır
 
-Methdolar
+## Type kısaltmaları
 T : Type
 E : element
 K : key
@@ -11,34 +11,30 @@ N : Number
 V : value
 
 
--T veya E primitive tipleri hepsi olabilir
--T veya E geri dönüş tipi'de T olur
+- T veya E primitive tipleri hepsi olabilir
+- T veya E geri dönüş tipi'de T olur
 
-classlar
--generic olarak gösterilebilir. class adının sonuna <T>,<E> şeklinde yazılır
--non-primitive tipler olur(Integer,String)
+## Classlar
+- generic olarak gösterilebilir. class adının sonuna <T>,<E> şeklinde yazılır
+- non-primitive tipler olur(Integer,String)
 
-*********************************
--generic kullanılınca derleyicinin anlaması için önüne belirtilmeli ve üstüne açıklama yazılmalı
--notasyon ile de belirtilme @SupperssWarnings("")
--extends ile önceden belirte bilinir tip
-**
--compile time'da tip güvenliği sağlıyor
--autoboxing, unboxing cast işlemlerin önüne geçmemizi sağlar
--daha esnek bir yapı haline gelir
--tip güvenliği sağlar
+- generic kullanılınca derleyicinin anlaması için önüne belirtilmeli ve üstüne açıklama yazılmalı
+- notasyon ile de belirtilme @SupperssWarnings("")
+- extends ile önceden belirte bilinir tip
 
-methodlar
-syntax : accessModifier <> dönüşTipi methodAdı(){}
+- compile time'da tip güvenliği sağlıyor
+- autoboxing, unboxing cast işlemlerin önüne geçmemizi sağlar
+- daha esnek bir yapı haline gelir
+- tip güvenliği sağlar
 
--dönüş tipide generic olabilir
+### Methodlar Syntax
+`accessModifier <> dönüşTipi methodAdı(){}`
 
--extends ile tiple güvenliğini sağlamaya çalışırız
+- Dönüş tipide generic olabilir
 
-NUmber'a bak
+- Extends ile tiple güvenliğini sağlamaya çalışırız
 
-
-****Java Generics WildCards 
--PECS : Producer extends(child) - consumer super(parent)
--<> içinde ? kullanılabilir ve adı joker tiptir
--Bir API tasarlanacağı zaman esneklik için bunlar kullanılır
+## Java Generics WildCards 
+- PECS : Producer extends(child) - consumer super(parent)
+- <> içinde ? kullanılabilir ve adı joker tiptir
+- Bir API tasarlanacağı zaman esneklik için bunlar kullanılır
